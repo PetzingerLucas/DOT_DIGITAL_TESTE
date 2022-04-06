@@ -1,0 +1,120 @@
+.options_container {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(190, 190, 190, 1);
+  align-items: center;
+  width: 100%;
+  max-width: 1366px;
+  height: 761px;
+  color: white;
+}
+
+.option_container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  max-width: 1200px;
+  padding-bottom: 3rem;
+  justify-content: space-evenly;
+  color: black;
+}
+
+.option_container img {
+  width: 300px;
+  border: 10px solid rgba(111, 111, 111, 1);
+}
+
+.option_container p {
+  color: #6f6f6f;
+  width: 60%;
+}
+
+.option_btn {
+  display: flex;
+  border-color: rgba(255, 255, 255, 0.294);
+  background-color: rgba(111, 111, 111, 1);
+  color: white;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.options_container :first-of-type button {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.options_container :last-of-type button {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.show_option_btn {
+  display: flex;
+  border: none;
+
+  background-color: white;
+  color: #6f6f6f;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.options_container :last-child .show_option_btn {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.slideOption {
+  height: 61px;
+  opacity: 1;
+  transition: all 0.3s;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.slideOptionShow {
+  transition: all 0.3s;
+  width: 100%;
+  max-width: 1200px;
+  height: 350px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  .options_container {
+    padding: 2rem 1rem;
+    height: 800px;
+  }
+
+  .option_container {
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .option_container img {
+    margin-top: 50px;
+    width: 80%;
+    border: 10px solid rgba(111, 111, 111, 1);
+  }
+
+  .option_container p {
+    color: #6f6f6f;
+    width: 80%;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+
+  .slideOptionShow {
+    height: 100%;
+    padding-bottom: 10px;
+  }
+}

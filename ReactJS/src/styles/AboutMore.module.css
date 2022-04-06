@@ -1,0 +1,131 @@
+.aboutMore_container {
+  justify-content: center;
+  gap: 50px;
+  max-width: 1366px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  background-color: rgba(69, 69, 69, 1);
+  color: #ffffff;
+}
+
+.aboutMore_slide {
+  display: flex;
+  width: 75%;
+  overflow: hidden;
+}
+
+.cards_container{
+  overflow-x: hidden;
+  gap: 5%;
+  display: flex;
+  width: 100%;
+
+}
+
+.card_img {
+  min-height: 200px;
+  min-width: 300px;
+  max-width: 300px;
+  max-height: 200px;
+  object-fit: cover;
+  border: 10px solid rgba(111, 111, 111, 1);
+  z-index: 1;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 30%;
+  justify-content: space-evenly;
+  height: 501px;
+}
+
+.card_text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 287px;
+  font-family: "Roboto", regular;
+}
+
+.card_text h3 {
+  margin-bottom: 1.5rem;
+  z-index: 1;
+}
+
+.next_btn,
+.prev_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  opacity: 1;
+  width: 100px;
+  height: 100px;
+  transition: all .3s;
+}
+
+.next_btn:hover,
+.prev_btn:hover {
+  background-color: #546130;
+}
+
+.next_btn:disabled,
+.prev_btn:disabled {
+  background-color: #54613017;
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.buttons_container {
+  position: absolute;
+  width: 95%;
+  padding: 0 1rem;
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 0;
+}
+@media screen and (max-width: 800px) {
+  .aboutMore_container {
+    gap: 0;
+  }
+
+  .card{
+    min-width: 100%;
+    padding: 2rem;
+    gap: 0px;
+    align-items: center;
+    align-content: center;
+  }
+
+  .aboutMore_slide {
+    width: 100%;
+    gap: 35px;
+    overflow: hidden;
+  }
+  
+
+  .buttons_container {
+    position: static;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-2rem);
+  }
+
+  .next_btn:hover,
+.prev_btn:hover {
+  background-color: transparent;
+}
+}

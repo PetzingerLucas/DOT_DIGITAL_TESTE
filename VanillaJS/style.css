@@ -1,0 +1,459 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+main {
+  display: flex;
+  background-color: floralwhite;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Header_header_container {
+  align-items: center;
+  position: relative;
+  background-color: rgb(250, 250, 250);
+  max-height: 911px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  font-family: Roboto, bold;
+}
+.Header_title_container {
+  position: absolute;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24vh;
+  padding-top: 1.5rem;
+  z-index: 1;
+}
+.Header_title_container h1 {
+  color: rgb(84, 97, 48);
+  font-size: 3.75rem;
+}
+.Header_header_container p {
+  color: rgb(45, 59, 9);
+  font-size: 1.5rem;
+}
+.Header_header_container > img {
+  object-fit: cover;
+  height: auto;
+  max-width: 1366px;
+  min-height: 911px;
+  transition: all 1s ease 0s;
+  max-height: 100%;
+  z-index: 0;
+}
+.Header_slide_buttons {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(52, 52, 52, 0.706);
+  opacity: 1;
+  width: 100%;
+  height: 5.68rem;
+  max-width: 1366px;
+  z-index: 1;
+  bottom: 0px;
+}
+.Header_slide_buttons .Header_checkedbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: rgb(84, 97, 48);
+  border-radius: 50%;
+  opacity: 1;
+  z-index: 2;
+  cursor: pointer;
+  height: 3.68rem;
+  margin: 0px 1rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out 0s;
+  width: 3rem;
+}
+.Header_slide_buttons .Header_uncheckedbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 1;
+  z-index: 2;
+  cursor: pointer;
+  height: 3rem;
+  margin: 0px 1rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out 0s;
+  width: 3rem;
+}
+.AboutMore_aboutMore_container {
+  justify-content: center;
+  position: relative;
+  max-width: 1366px;
+  background-color: rgba(69, 69, 69, 1);
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  z-index: 3;
+}
+.AboutMore_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 30%;
+  transform: translateX(0);
+  justify-content: space-evenly;
+  height: 501px;
+  z-index: 2;
+  transition: all 0.5s linear 0s;
+}
+.AboutMore_card_img {
+  max-width: 300px;
+  min-width: 300px;
+  border: 10px solid rgb(111, 111, 111);
+  min-height: 200px;
+  max-height: 200px;
+  z-index: 1;
+}
+.AboutMore_card_text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 287px;
+  z-index: 2;
+  font-family: Roboto, regular;
+}
+.AboutMore_card_text h3 {
+  margin-bottom: 1.5rem;
+  z-index: 3;
+}
+.AboutMore_buttons_container {
+  position: absolute;
+  width: 98%;
+  top: 20%;
+  left: 1%;
+  padding: 0px 1rem;
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.AboutMore_aboutMore_slide {
+  display: flex;
+  overflow: hidden;
+  width: 80%;
+  gap: 35px;
+}
+
+.AboutMore_next_btn,
+.AboutMore_prev_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  opacity: 1;
+  width: 100px;
+  height: 100px;
+  transition: all 0.3s ease 0s;
+}
+.AboutMore_next_btn:hover,
+.AboutMore_prev_btn:hover {
+  background-color: rgb(84, 97, 48);
+}
+
+.AboutMore_next_btn:disabled,
+.AboutMore_prev_btn:disabled {
+  background-color: rgba(153, 153, 153, 0.09);
+  cursor: not-allowed;
+}
+.OurHistory_our_history_container {
+  background-color: rgb(111, 111, 111);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  min-height: 561px;
+  max-height: fit-content;
+  max-width: 1366px;
+  color: white;
+}
+.OurHistory_our_history_container img {
+  max-width: 400px;
+  min-height: 400px;
+  border-radius: 50%;
+  border: 15px solid rgb(52, 52, 52);
+}
+.OurHistory_our_history_container > div {
+  width: 100%;
+  max-width: 689px;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  padding: 5rem;
+}
+.OurHistory_our_history_container > div h2 {
+  font-size: 36px;
+}
+.Options_options_container {
+  background-color: rgb(190, 190, 190);
+  /* height: 800px; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  width: 100%;
+  max-width: 1366px;
+}
+.Option_btn_title {
+  margin: 0.5px auto;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  background-color: rgba(111, 111, 111, 1);
+  padding: 1.5rem 3rem;
+}
+
+.checkbox {
+  display: none;
+}
+
+
+.Options_option_container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0 0 5rem;
+  width: 90%;
+  margin: 0 auto;
+  display: none;
+}
+
+
+.Options_option_container img {
+  width: 300px;
+  border: 10px solid rgb(111, 111, 111);
+}
+
+.Options_option_container p {
+  width: 60%;
+}
+.checkbox:checked ~ .Options_option_container,
+.checkbox:checked ~ .Option_btn_title {
+  display: flex;
+  background-color: white;
+  color: gray;
+}
+
+.Options_slideOption:first-child .Option_btn_title {
+ border-radius: 10px 10px 0 0;
+}
+
+
+
+
+.Contact_contact_container {
+  display: flex;
+  background: linear-gradient(
+    130deg,
+    rgb(111, 111, 111) 50%,
+    rgb(69, 69, 69) 50%
+  );
+  justify-content: center;
+  width: 100%;
+  max-width: 1366px;
+}
+.Contact_contact_container form {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  gap: 3rem;
+  width: 80%;
+}
+.Contact_contact_container > form :nth-child(1),
+form :nth-child(4) {
+  background-color: rgb(190, 190, 190);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+.Contact_contact_container > form :nth-child(2),
+form :nth-child(3) {
+  background-color: rgb(190, 190, 190);
+  width: 45%;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+.Contact_contact_container button {
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  width: 10rem;
+  border-radius: 0.3rem;
+}
+.Footer_footer {
+  background-color: rgb(52, 52, 52);
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  max-width: 1366px;
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .Header_header_container > img {
+    min-height: 300px;
+    width: 100%;
+  }
+
+  .Header_header_container p {
+    color: white;
+    max-width: 68.5%;
+    font-size: 1.2rem;
+  }
+
+  .Header_down {
+    transform: translateY(2.5rem);
+  }
+
+  .Header_title_container h1 {
+    color: white;
+    font-size: 1.8rem;
+    height: 20vh;
+    max-width: 70%;
+  }
+
+  .Header_title_container {
+    background-color: rgb(69, 69, 69);
+    position: relative;
+    gap: 1rem;
+    height: 150px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .AboutMore_buttons_container {
+    position: static;
+    z-index: 5;
+    justify-content: center;
+    transform: translateY(-30px);
+  }
+
+  .AboutMore_next_btn:hover,
+  .AboutMore_prev_btn:hover {
+    background-color: rgb(69, 69, 69);
+  }
+
+  .AboutMore_aboutMore_container {
+    gap: 0px;
+    flex-direction: column;
+  }
+
+  .AboutMore_aboutMore_slide {
+    gap: 0px;
+    width: 360px;
+  }
+
+  .AboutMore_card {
+    min-width: 100%;
+  }
+
+  @media screen and (max-width: 800px) {
+    .OurHistory_our_history_container {
+      flex-direction: column;
+    }
+    .OurHistory_our_history_container img {
+      margin-top: 1.5rem;
+      max-width: 100%;
+    }
+    .OurHistory_our_history_container > div {
+      gap: 1rem;
+      padding: 2rem;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .Options_options_container {
+      padding: 2rem 1rem;
+      height: auto;
+    }
+
+    .Options_slideOptionShow {
+      height: 100%;
+      padding-bottom: 10px;
+    }
+    .Options_option_container {
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-around;
+      gap: 20px;
+    }
+    .Options_option_container img {
+      margin-top: 50px;
+      width: 80%;
+      border: 10px solid rgb(111, 111, 111);
+    }
+
+    .Options_option_container p {
+      color: rgb(111, 111, 111);
+      width: 80%;
+      padding-bottom: 100px;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .Contact_contact_container > form {
+      width: 100%;
+      padding: 1rem;
+      gap: 1rem;
+    }
+
+    .Contact_contact_container > form :nth-child(1),
+    form :nth-child(4) {
+      border-radius: 0.7rem;
+    }
+
+    .Contact_contact_container > form :nth-child(2),
+    form :nth-child(3) {
+      width: 100%;
+      border-radius: 0.7rem;
+    }
+
+    .Contact_contact_container > form :nth-child(2),
+    form :nth-child(3) {
+      width: 100%;
+      border-radius: 0.7rem;
+    }
+
+    .Contact_contact_container > form :nth-child(1),
+    form :nth-child(4) {
+      border-radius: 0.7rem;
+    }
+  }
+}
+
